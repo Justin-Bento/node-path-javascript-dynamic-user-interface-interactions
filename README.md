@@ -6,6 +6,8 @@ Date Started: Monday, 13th January 2024.
 
 Date Completed: 
 
+Lesson URL - [https://www.theodinproject.com/lessons/node-path-javascript-dynamic-user-interface-interactions](https://www.theodinproject.com/lessons/node-path-javascript-dynamic-user-interface-interactions)
+
 ## Drop-down menus
 
 A dropdown is something you’ve most likely encountered on various other websites you’ve visited or apps you’ve used. Imagine any time you’ve clicked a button (usually one that contained an icon of 3 horizontal or vertical dots or lines) and a list of items suddenly appeared (you could even say these items… dropped down from the button).
