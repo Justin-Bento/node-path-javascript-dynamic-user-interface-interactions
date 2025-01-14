@@ -18,7 +18,13 @@ h1 {
 }
 
 .dropdown-menu ul {
+  display: none;
   list-style-type: none;
+  position: relative;
+}
+.dropdown-menu:hover ul {
+  display: block;
+  cursor: pointer;
 }
 .dropdown-menu ul li:first-of-type {
   border-top: transparent;
