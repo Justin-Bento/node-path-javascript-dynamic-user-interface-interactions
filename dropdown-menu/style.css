@@ -7,6 +7,9 @@ body {
   margin: 0rem auto;
   padding: 1rem;
 }
+h1 {
+  margin-bottom: 1rem;
+}
 .dropdown-menu button {
   padding: 1rem 1.5rem;
   background-color: hsl(0, 0%, 90%);
@@ -16,4 +19,12 @@ body {
 
 ul {
   list-style-type: none;
+}
+.dropdown-menu ul li:first-of-type {
+  border-top: transparent;
+}
+.dropdown-menu ul li {
+  padding: 1rem;
+  border-top: 1px solid hsl(0, 0%, 85%);
+  background-color: hsl(0, 0%, 90%);
 }
