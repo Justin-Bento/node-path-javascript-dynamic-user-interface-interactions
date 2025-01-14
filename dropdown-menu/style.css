@@ -42,5 +42,6 @@ h1 {
 }
 
 .dropdown-menu ul li a:hover {
+  text-decoration: underline;
   background-color: hsl(0, 0%, 95%);
 }
