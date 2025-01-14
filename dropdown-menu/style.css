@@ -17,7 +17,7 @@ h1 {
   border-radius: 0.25rem;
 }
 
-ul {
+.dropdown-menu ul {
   list-style-type: none;
 }
 .dropdown-menu ul li:first-of-type {
