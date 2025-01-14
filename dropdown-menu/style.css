@@ -2,6 +2,13 @@
   margin: 0;
   padding: 0;
 }
+.dropdown-menu button {
+  padding: 1rem 1.5rem;
+  background-color: hsl(0, 0%, 90%);
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 0.25rem;
+}
+
 ul {
   list-style-type: none;
 }
