@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
 }
+body {
+  max-width: 1280px;
+  margin: 0rem auto;
+  padding: 1rem;
+}
 .dropdown-menu button {
   padding: 1rem 1.5rem;
   background-color: hsl(0, 0%, 90%);
