@@ -30,7 +30,17 @@ h1 {
   border-top: transparent;
 }
 .dropdown-menu ul li {
-  padding: 1rem;
   border-top: 1px solid hsl(0, 0%, 85%);
   background-color: hsl(0, 0%, 90%);
+}
+
+.dropdown-menu ul li a {
+  display: block; /* Make <a> behave like a block element */
+  padding: 1rem; /* Ensure appropriate padding */
+  color: inherit; /* Optional: Inherit the text color from the <li> */
+  text-decoration: none; /* Remove underline from the <a> */
+}
+
+.dropdown-menu ul li a:hover {
+  background-color: hsl(0, 0%, 95%);
 }
