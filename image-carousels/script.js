@@ -30,3 +30,6 @@ function changeSlideShow() {
   currentIndex = (currentIndex + 1) % carouselItems.length;
   carouselContainer.children[currentIndex].style.display = "block";
 }
+
+// Change item every 2 seconds
+setInterval(changeItem, 2000);
