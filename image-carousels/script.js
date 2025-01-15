@@ -15,7 +15,7 @@ carouselItems.forEach((item) => {
   newElement.style.display = "grid";
   newElement.style.placeContent = "center";
   newElement.style.width = "100%";
-  newElement.style.height = "100vh";
+  newElement.style.height = "90vh";
   newElement.classList.add("carousel-item");
   carouselContainer.appendChild(newElement);
 });
