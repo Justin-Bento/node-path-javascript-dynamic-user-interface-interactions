@@ -14,6 +14,8 @@ carouselItems.forEach((item) => {
   newElement.style.backgroundColor = item.fruitColor;
   newElement.style.display = "grid";
   newElement.style.placeContent = "center";
+  newElement.style.width = "100%";
+  newElement.style.height = "100vh";
   newElement.classList.add("carousel-item");
   carouselContainer.appendChild(newElement);
 });
