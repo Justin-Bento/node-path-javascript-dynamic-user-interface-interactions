@@ -2,7 +2,14 @@
   margin: 0;
   padding: 0;
 }
+
 .image-carousels {
   color: white;
   text-transform: capitalize;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.image-carousels .carousel-item {
+  flex-shrink: 0; /* Prevent items from shrinking */
 }
