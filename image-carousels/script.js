@@ -22,3 +22,5 @@ carouselItems.forEach((item) => {
 });
 
 let currentIndex = 0;
+
+carouselContainer.children[0].style.display = "grid";
