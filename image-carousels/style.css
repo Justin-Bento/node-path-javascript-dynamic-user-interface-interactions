@@ -2,3 +2,7 @@
   margin: 0;
   padding: 0;
 }
+.image-carousels {
+  color: white;
+  text-transform: capitalize;
+}
