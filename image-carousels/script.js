@@ -12,6 +12,8 @@ carouselItems.forEach((item) => {
   let newElement = document.createElement("div");
   newElement.textContent = item.fruitName;
   newElement.style.backgroundColor = item.fruitColor;
+  newElement.style.display = "grid";
+  newElement.style.placeContent = "center";
   newElement.classList.add("carousel-item");
   carouselContainer.appendChild(newElement);
 });
