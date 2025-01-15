@@ -1,16 +1,17 @@
 const carouselContainer = document.querySelector(".image-carousels");
 const carouselItems = [
-  "apples",
-  "Bananas",
-  "Citron",
-  "Date",
-  "Elderberry",
-  "Fig",
+  { fruitName: "apples", fruitColor: "red" },
+  { fruitName: "Bananas", fruitColor: "yellow" },
+  { fruitName: "Citron", fruitColor: "green" },
+  { fruitName: "Date", fruitColor: "brown" },
+  { fruitName: "Elderberry", fruitColor: "purple" },
+  { fruitName: "False Mangosteen", fruitColor: "black" },
 ];
 
 carouselItems.forEach((item) => {
   let newElement = document.createElement("div");
-  newElement.textContent = item;
+  newElement.textContent = item.fruitName;
+  newElement.style.backgroundColor = item.fruitColor;
   newElement.classList.add("carousel-item");
   carouselContainer.appendChild(newElement);
 });
