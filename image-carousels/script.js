@@ -24,3 +24,9 @@ carouselItems.forEach((item) => {
 let currentIndex = 0;
 
 carouselContainer.children[0].style.display = "grid";
+
+function changeSlideShow() {
+  carouselContainer.children[currentIndex].style.display = "none";
+  currentIndex = (currentIndex + 1) % carouselItems.length;
+  carouselContainer.children[currentIndex].style.display = "block";
+}
