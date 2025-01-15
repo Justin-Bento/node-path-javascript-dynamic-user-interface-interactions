@@ -7,7 +7,7 @@
   color: white;
   text-transform: capitalize;
   display: flex;
-  overflow-x: scroll;
+  overflow-x: hidden;
 }
 
 .image-carousels .carousel-item {
