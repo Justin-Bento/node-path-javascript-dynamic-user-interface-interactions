@@ -12,10 +12,13 @@ carouselItems.forEach((item) => {
   let newElement = document.createElement("div");
   newElement.textContent = item.fruitName;
   newElement.style.backgroundColor = item.fruitColor;
-  newElement.style.display = "grid";
+  newElement.style.display = "none";
+  newElement.style.grid = "1fr";
   newElement.style.placeContent = "center";
   newElement.style.width = "100%";
   newElement.style.height = "90vh";
   newElement.classList.add("carousel-item");
   carouselContainer.appendChild(newElement);
 });
+
+let currentIndex = 0;
