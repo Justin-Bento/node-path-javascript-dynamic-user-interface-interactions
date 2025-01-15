@@ -8,12 +8,13 @@ const carouselItems = [
   { fruitName: "False Mangosteen", fruitColor: "black" },
 ];
 
+let currentIndex = 0;
+
 carouselItems.forEach((item) => {
   let newElement = document.createElement("div");
   newElement.textContent = item.fruitName;
   newElement.style.backgroundColor = item.fruitColor;
   newElement.style.display = "none";
-  newElement.style.grid = "1fr";
   newElement.style.placeContent = "center";
   newElement.style.width = "100%";
   newElement.style.height = "90vh";
@@ -21,15 +22,12 @@ carouselItems.forEach((item) => {
   carouselContainer.appendChild(newElement);
 });
 
-let currentIndex = 0;
-
 carouselContainer.children[0].style.display = "grid";
 
-function changeSlideShow() {
+function changeItem() {
   carouselContainer.children[currentIndex].style.display = "none";
   currentIndex = (currentIndex + 1) % carouselItems.length;
-  carouselContainer.children[currentIndex].style.display = "block";
+  carouselContainer.children[currentIndex].style.display = "grid";
 }
 
-// Change item every 2 seconds
 setInterval(changeItem, 2000);
