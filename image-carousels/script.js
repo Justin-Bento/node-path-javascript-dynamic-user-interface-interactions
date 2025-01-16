@@ -8,50 +8,57 @@ const carouselItems = [
   {
     fruitName: "Bananas",
     fruitColor: "yellow",
-    fruitImage: "apple-fruit-image.jpg",
+    fruitImage: "bananas-fruit-image.jpg",
   },
   {
     fruitName: "Citron",
     fruitColor: "green",
-    fruitImage: "apple-fruit-image.jpg",
+    fruitImage: "citron-fruit-image.jpg",
   },
   {
     fruitName: "Date",
     fruitColor: "brown",
-    fruitImage: "apple-fruit-image.jpg",
+    fruitImage: "date-fruit-image.jpg",
   },
   {
     fruitName: "Elderberry",
     fruitColor: "purple",
-    fruitImage: "apple-fruit-image.jpg",
+    fruitImage: "elderberry-fuit-image.jpg",
   },
   {
     fruitName: "False Mangosteen",
     fruitColor: "black",
-    fruitImage: "apple-fruit-image.jpg",
+    fruitImage: "falseMangosteen-fruit-image.jpg",
   },
 ];
 
 let currentIndex = 0;
+const carouselElements = [];
 
 carouselItems.forEach((item) => {
   let newElement = document.createElement("img");
-  newElement.src = `/image-carousels/images/${item.fruitImage}`;
+  newElement.src = `/image-carousels/images/${item.fruitImage}`; // Set the initial image
   newElement.alt = `An image of a ${item.fruitName}`;
-  newElement.style.backgroundColor = item.fruitColor;
-  newElement.style.display = "none";
+  newElement.style.display = "none"; // Initially hide all images
   newElement.style.width = "100%";
   newElement.style.height = "90vh";
   newElement.classList.add("carousel-item");
   carouselContainer.appendChild(newElement);
+  carouselElements.push(newElement); // Store each element in the array
 });
 
-carouselContainer.children[0].style.display = "block";
+carouselElements[0].style.display = "block"; // Show the first image
 
 function changeItem() {
-  carouselContainer.children[currentIndex].style.display = "none";
-  currentIndex = (currentIndex + 1) % carouselItems.length;
-  carouselContainer.children[currentIndex].style.display = "block";
+  carouselElements[currentIndex].style.display = "none"; // Hide the current image
+  currentIndex = (currentIndex + 1) % carouselItems.length; // Move to the next item
+
+  // Update the image src
+  carouselElements[
+    currentIndex
+  ].src = `/image-carousels/images/${carouselItems[currentIndex].fruitImage}`;
+
+  carouselElements[currentIndex].style.display = "block"; // Show the next image
 }
 
-setInterval(changeItem, 2000);
+setInterval(changeItem, 2000); // Change every 2 seconds
