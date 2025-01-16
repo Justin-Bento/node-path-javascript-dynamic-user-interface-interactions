@@ -11,8 +11,9 @@ const carouselItems = [
 let currentIndex = 0;
 
 carouselItems.forEach((item) => {
-  let newElement = document.createElement("div");
-  newElement.textContent = item.fruitName;
+  let newElement = document.createElement("img");
+  newElement.src = `/image-carousels/images/`;
+  newElement.alt = `An image of a ${item.fruitName.capitalize()}`;
   newElement.style.backgroundColor = item.fruitColor;
   newElement.style.display = "none";
   newElement.style.placeContent = "center";
