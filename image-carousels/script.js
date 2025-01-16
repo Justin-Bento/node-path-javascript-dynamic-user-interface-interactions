@@ -39,18 +39,19 @@ carouselItems.forEach((item) => {
   newElement.src = `/image-carousels/images/${item.fruitImage}`;
   newElement.alt = `An image of a ${item.fruitName}`;
   newElement.style.backgroundColor = item.fruitColor;
+  newElement.style.display = "none";
   newElement.style.width = "100%";
   newElement.style.height = "90vh";
   newElement.classList.add("carousel-item");
   carouselContainer.appendChild(newElement);
 });
 
-carouselContainer.children[0].style.display = "grid";
+carouselContainer.children[0].style.display = "block";
 
 function changeItem() {
   carouselContainer.children[currentIndex].style.display = "none";
   currentIndex = (currentIndex + 1) % carouselItems.length;
-  carouselContainer.children[currentIndex].style.display = "grid";
+  carouselContainer.children[currentIndex].style.display = "block";
 }
 
 setInterval(changeItem, 2000);
