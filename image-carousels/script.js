@@ -1,22 +1,44 @@
 const carouselContainer = document.querySelector(".image-carousels");
 const carouselItems = [
-  { fruitName: "apples", fruitColor: "red" },
-  { fruitName: "Bananas", fruitColor: "yellow" },
-  { fruitName: "Citron", fruitColor: "green" },
-  { fruitName: "Date", fruitColor: "brown" },
-  { fruitName: "Elderberry", fruitColor: "purple" },
-  { fruitName: "False Mangosteen", fruitColor: "black" },
+  {
+    fruitName: "apples",
+    fruitColor: "red",
+    fruitImage: "apple-fruit-image.jpg",
+  },
+  {
+    fruitName: "Bananas",
+    fruitColor: "yellow",
+    fruitImage: "apple-fruit-image.jpg",
+  },
+  {
+    fruitName: "Citron",
+    fruitColor: "green",
+    fruitImage: "apple-fruit-image.jpg",
+  },
+  {
+    fruitName: "Date",
+    fruitColor: "brown",
+    fruitImage: "apple-fruit-image.jpg",
+  },
+  {
+    fruitName: "Elderberry",
+    fruitColor: "purple",
+    fruitImage: "apple-fruit-image.jpg",
+  },
+  {
+    fruitName: "False Mangosteen",
+    fruitColor: "black",
+    fruitImage: "apple-fruit-image.jpg",
+  },
 ];
 
 let currentIndex = 0;
 
 carouselItems.forEach((item) => {
   let newElement = document.createElement("img");
-  newElement.src = `/image-carousels/images/`;
-  newElement.alt = `An image of a ${item.fruitName.capitalize()}`;
+  newElement.src = `/image-carousels/images/${item.fruitImage}`;
+  newElement.alt = `An image of a ${item.fruitName}`;
   newElement.style.backgroundColor = item.fruitColor;
-  newElement.style.display = "none";
-  newElement.style.placeContent = "center";
   newElement.style.width = "100%";
   newElement.style.height = "90vh";
   newElement.classList.add("carousel-item");
