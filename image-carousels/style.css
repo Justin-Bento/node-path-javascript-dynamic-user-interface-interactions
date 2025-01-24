@@ -1,12 +1,15 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: Carlito, Arial, Helvetica, sans-serif;
 }
 @font-face {
   font-family: "Carlito";
   src: url("/image-carousels/fonts/Carlito/Carlito-Regular.ttf") format("ttf");
 }
-
+html {
+  font-family: inherit;
+}
 .image-carousels {
   color: white;
   text-transform: capitalize;
