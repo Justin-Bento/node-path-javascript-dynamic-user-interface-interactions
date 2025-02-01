@@ -1,12 +1,10 @@
 # Dynamic User Interface Interactions
 
-JavaScript is a very powerful language. It is capable of creating complex web applications that work everywhere. But it is just as often used on a smaller scale. JavaScript is the glue that holds even less flashy websites together- it makes drop-downs drop down and image sliders slide.
+In this repository, I’ll be using JavaScript to build a general collection of user-interface components. The only limitation of this project is that I’ll stick to using the core three technologies—HTML, CSS, and JavaScript—avoiding any complex CSS frameworks.
 
-Date Started: Monday, 13th January 2024.
-
-Date Completed: 
-
-Lesson URL - [https://www.theodinproject.com/lessons/node-path-javascript-dynamic-user-interface-interactions](https://www.theodinproject.com/lessons/node-path-javascript-dynamic-user-interface-interactions)
+- Date Started: Monday, 13th January 2024.
+- Date Completed: Tuesday, 27th January 2024.
+- Lesson URL - [Node Path Javascript Dynamic User Interface Interactions](https://www.theodinproject.com/lessons/node-path-javascript-dynamic-user-interface-interactions)
 
 ## Drop-down menus
 
